@@ -1,6 +1,5 @@
 <template>
   <div class="glowbar">
-
   </div>
 </template>
 
