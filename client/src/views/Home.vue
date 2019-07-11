@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home container">
     <div class="profile">
       <img src="@/assets/kevin.jpg" />
     </div>
