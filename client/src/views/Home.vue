@@ -1,9 +1,9 @@
 <template>
   <div class="home container">
-    <div class="profile">
+    <div class="row profile">
       <img src="@/assets/kevin.jpg" />
     </div>
-    <div class="vue-typer__container">
+    <div class="row vue-typer__container">
       <vue-typer 
         class="vue-typer--large"
         :text="typer" 
@@ -11,12 +11,14 @@
         :erase-delay=50
       ></vue-typer>
     </div>
-    <contact-form v-bind:class="{ visible: showForm }"></contact-form>
-    <button 
-      v-show="!showForm" 
-      v-on:click="showForm = !showForm" 
-      class="button--secondary"
-    >Contact Me</button>
+    <div class="row">
+      <contact-form v-bind:class="{ visible: showForm }"></contact-form>
+      <button 
+        v-show="!showForm" 
+        v-on:click="showForm = !showForm" 
+        class="button--secondary"
+      >Contact Me</button>
+      </div>
   </div>
 </template>
 

@@ -1,5 +1,6 @@
 input, textarea {
     @include normalize-form-elements();
+    @include regular_font;
 
     background-color: $gray;
     color: $white;
@@ -43,4 +44,6 @@ form, .form {
 
 .form__title {
     @include header_font;
+
+    margin-bottom: 2rem;
 }
