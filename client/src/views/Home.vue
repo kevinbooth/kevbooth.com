@@ -11,7 +11,7 @@
         :erase-delay=50
       ></vue-typer>
     </div>
-    <contact-form v-bind:class="{ visible: !showForm }"></contact-form>
+    <contact-form v-bind:class="{ visible: showForm }"></contact-form>
     <button 
       v-show="!showForm" 
       v-on:click="showForm = !showForm" 
@@ -42,6 +42,6 @@ export default {
 
 <style lang="scss">
 .visible {
-  visibility: hidden;
+  max-height: 50rem !important;
 }
 </style>
