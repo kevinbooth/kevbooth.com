@@ -9,15 +9,4 @@
     padding-right: 0;
     width: 100%;
 }
-.form__input--text::placeholder,
-%form__input--text::placeholder {
-    color: $gray;
-}
 
-/* Overrides */
-input[type="text"] {
-    @extend %form__input--text !optional;
-}
-input[type="text"].WatermarkText {
-    @extend %form__input--text::placeholder !optional;
-}

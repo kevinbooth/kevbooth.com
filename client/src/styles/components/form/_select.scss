@@ -11,7 +11,3 @@
 select {
     @extend %form__input--select !optional;
 }
-
-select option:first-child {
-    @extend %form__input--text::placeholder !optional;
-}
