@@ -1,0 +1,11 @@
+.profile {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  img {
+    @include box-shadow(10px, 10px, 0, 0, $purple);
+
+    max-width: 14rem;
+    //border: 3px solid $purple;
+  }
+}
