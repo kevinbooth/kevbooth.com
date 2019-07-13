@@ -3,7 +3,7 @@
     <div class="container">
       <div class="nav">
         <router-link to="/">home</router-link> |
-        <router-link to="/about">about</router-link>
+        <router-link to="/skills">skills</router-link>
       </div>
       <glowbar></glowbar>
     </div>
