@@ -1,5 +1,5 @@
 <template>
-  <div class="home container">
+  <div class="container home">
     <div class="row profile">
       <div class="three columns">
         <img src="@/assets/kevin.jpg" />
