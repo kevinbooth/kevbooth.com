@@ -1,15 +1,25 @@
 <template>
   <div class="home container">
     <div class="row profile">
-      <img src="@/assets/kevin.jpg" />
-    </div>
-    <div class="row vue-typer__container">
-      <vue-typer 
-        class="vue-typer--large"
-        :text="typer" 
-        erase-style="backspace"
-        :erase-delay=50
-      ></vue-typer>
+      <div class="three columns">
+        <img src="@/assets/kevin.jpg" />
+      </div>
+      <div class="nine columns">
+        <div class="vue-typer__container--home">
+          <vue-typer 
+            class="vue-typer--large"
+            :text="typer" 
+            erase-style="backspace"
+            :erase-delay=50
+          ></vue-typer>
+        </div>
+        <div class="follow unicon--inverse">
+          <h1>Let's connect!</h1>
+          <a href="https://www.linkedin.com/in/kevbooth" target="_blank"><unicon name="linkedin" width="30" height="30"></unicon></a>
+          <a href="https://www.instagram.com/kevinbooth/" target="_blank"><unicon name="instagram" width="30" height="30"></unicon></a>
+          <a href="https://www.facebook.com/KevinBoothh" target="_blank"><unicon name="facebook" width="30" height="30"></unicon></a>
+        </div>
+      </div>
     </div>
     <div class="row">
       <contact-form v-bind:class="{ visible: showForm }"></contact-form>

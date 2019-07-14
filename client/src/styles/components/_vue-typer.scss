@@ -66,6 +66,11 @@
     font-size: 3rem;
 }
 
-.vue-typer__container {
+.vue-typer__container--home {
+    margin-top: 2rem;
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 34.375em) {
+      margin-top: 0;
+    }
 }
