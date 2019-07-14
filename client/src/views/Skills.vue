@@ -6,3 +6,18 @@
     </div>
   </div>
 </template>
+
+<script>
+import { SITE_NAME } from '@/variables.js'
+
+export default {
+  metaInfo: {
+    title: 'Skills',
+    titleTemplate: '%s - ' + SITE_NAME,
+    htmlAttrs: {
+      lang: 'en',
+      amp: true
+    }
+  }
+}
+</script>

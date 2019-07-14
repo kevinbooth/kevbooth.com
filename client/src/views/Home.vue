@@ -26,6 +26,7 @@
 // @ is an alias to /src
 import { VueTyper } from 'vue-typer'
 import ContactForm from '@/components/ContactForm.vue'
+import { SITE_NAME } from '@/variables.js'
 
 export default {
   name: 'home',
@@ -39,6 +40,14 @@ export default {
       showForm: false
     }
   },
+  metaInfo: {
+    title: 'Home',
+    titleTemplate: '%s - ' + SITE_NAME,
+    htmlAttrs: {
+      lang: 'en',
+      amp: true
+    }
+  }
 }
 </script>
 
