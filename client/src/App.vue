@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <div class="container">
-      <div class="nav">
-        <router-link to="/">home</router-link> |
-        <router-link to="/skills">skills</router-link>
+      <div class="nav unicon">
+        <img src="@/assets/logo.svg" />
+        <router-link to="/"><unicon name="home-alt" width="30" height="30"></unicon></router-link>
+        <router-link to="/skills"><unicon name="screw" width="30" height="30"></unicon></router-link>
       </div>
       <glowbar></glowbar>
     </div>
