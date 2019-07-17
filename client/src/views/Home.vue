@@ -23,12 +23,10 @@
       </div>
     </div>
     <div class="row">
-      <contact-form v-bind:class="{ visible: showForm }"></contact-form>
-      <button 
-        v-show="!showForm" 
+      <a href="mailto:info@kevbooth.com"
         v-on:click="showForm = !showForm" 
-        class="button--secondary"
-      >Contact Me</button>
+        class="button button--secondary"
+      >Contact Me</a>
       </div>
   </div>
 </template>
@@ -47,8 +45,7 @@ export default {
   },
   data() {
     return {
-      typer: ["Hi, I'm Kevin!", "And I'm a web developer!"],
-      showForm: false
+      typer: ["Hi, I'm Kevin!", "And I'm a web developer!"]
     }
   },
   metaInfo: {
