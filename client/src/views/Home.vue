@@ -47,7 +47,7 @@ export default {
   },
   data() {
     return {
-      typer: ["Hi, I'm Kevin!", "And I'm a fullstack web developer!"],
+      typer: ["Hi, I'm Kevin!", "And I'm a web developer!"],
       showForm: false
     }
   },
