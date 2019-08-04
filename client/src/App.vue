@@ -2,9 +2,10 @@
   <div id="app">
     <div class="container">
       <div class="nav unicon">
-        <router-link to="/"><img src="@/assets/logo.svg" /></router-link>
-        <router-link to="/"><unicon name="home-alt" width="30" height="30"></unicon></router-link>
-        <router-link to="/skills"><unicon name="screw" width="30" height="30"></unicon></router-link>
+        <a href="https://github.com/kevinbooth" target="_blank"><unicon name="github" width="30" height="30"></unicon></a>
+        <a href="https://www.linkedin.com/in/kevbooth" target="_blank"><unicon name="linkedin" width="30" height="30"></unicon></a>
+        <a href="https://www.instagram.com/kevinbooth/" target="_blank"><unicon name="instagram" width="30" height="30"></unicon></a>
+        <a href="https://www.facebook.com/KevinBoothh" target="_blank"><unicon name="facebook" width="30" height="30"></unicon></a>
       </div>
       <glowbar></glowbar>
     </div>

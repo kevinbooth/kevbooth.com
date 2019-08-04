@@ -23,11 +23,11 @@
       </div>
     </div>
     <div class="row">
-      <a href="mailto:info@kevbooth.com"
+      <a href="mailto:kdbooth97@gmail.com"
         v-on:click="showForm = !showForm" 
         class="button button--secondary"
       >Contact Me</a>
-      </div>
+    </div>
   </div>
 </template>
 
