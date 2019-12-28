@@ -1,32 +1,21 @@
 <template>
   <div class="container home">
-    <div class="row profile">
-      <div class="three columns">
-        <img src="@/assets/kevin.jpg" />
+    <div class="row profile" v-bind:style="{ height: height }">
+      <img src="@/assets/kevin.jpg" />
+      <div class="vue-typer__container--home">
+        <vue-typer 
+          class="vue-typer--large"
+          :text="typer" 
+          erase-style="backspace"
+          :erase-delay=50
+        ></vue-typer>
       </div>
-      <div class="nine columns">
-        <div class="vue-typer__container--home">
-          <vue-typer 
-            class="vue-typer--large"
-            :text="typer" 
-            erase-style="backspace"
-            :erase-delay=50
-          ></vue-typer>
-        </div>
-        <div class="follow unicon--inverse">
-          <h1>Let's connect!</h1>
-          <a href="https://github.com/kevinbooth" target="_blank"><unicon name="github" width="30" height="30"></unicon></a>
-          <a href="https://www.linkedin.com/in/kevbooth" target="_blank"><unicon name="linkedin" width="30" height="30"></unicon></a>
-          <a href="https://www.instagram.com/kevinbooth/" target="_blank"><unicon name="instagram" width="30" height="30"></unicon></a>
-          <a href="https://www.facebook.com/KevinBoothh" target="_blank"><unicon name="facebook" width="30" height="30"></unicon></a>
-        </div>
+      <div class="follow unicon">
+        <a href="https://github.com/kevinbooth" target="_blank"><unicon name="github" width="30" height="30"></unicon></a>
+        <a href="https://www.linkedin.com/in/kevbooth" target="_blank"><unicon name="linkedin" width="30" height="30"></unicon></a>
+        <a href="https://www.instagram.com/kevinbooth/" target="_blank"><unicon name="instagram" width="30" height="30"></unicon></a>
+        <a href="https://www.facebook.com/KevinBoothh" target="_blank"><unicon name="facebook" width="30" height="30"></unicon></a>
       </div>
-    </div>
-    <div class="row">
-      <a href="mailto:kdbooth97@gmail.com"
-        v-on:click="showForm = !showForm" 
-        class="button button--secondary"
-      >Contact Me</a>
     </div>
   </div>
 </template>
@@ -45,8 +34,12 @@ export default {
   },
   data() {
     return {
-      typer: ["Hi, I'm Kevin!", "And I'm a web developer!"]
+      typer: ["hey, i'm kevin..", "and i code!"],
+      height: (window.innerHeight - 30) + "px"
     }
+  },
+  mounted: function() {
+    console.log(this.height);
   },
   metaInfo: {
     title: 'Home',
