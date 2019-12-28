@@ -38,9 +38,6 @@ export default {
       height: (window.innerHeight - 30) + "px"
     }
   },
-  mounted: function() {
-    console.log(this.height);
-  },
   metaInfo: {
     title: 'Home',
     titleTemplate: '%s - ' + SITE_NAME,
